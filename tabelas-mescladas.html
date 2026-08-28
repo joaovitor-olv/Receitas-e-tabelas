@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com colspan e rowspan</title>
+    <link rel="icon" type="image/png" href="imagens/favicon-tabela.png">
+
+    <style>
+        table,
+        td {
+            border: 1px solid red;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        td {
+            padding: 30px 60px;
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tabelas com colspan e rowspan</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Tabela com colspan</h2>
+            <table>
+                <caption>Cronograma de segunda-feira</caption>
+                <tbody>
+                    <tr>
+                        <td colspan="3">Cronograma de segunda-feira</td>
+                    </tr>
+                    <tr>
+                        <td>Manhã</td>
+                        <td>Tarde</td>
+                        <td>Noite</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Tabela com rowspan</h2>
+            <table>
+                <caption>Turnos de aula</caption>
+                <tbody>
+                    <tr>
+                        <td>Turno 1 - Manhã</td>
+                        <td rowspan="3">Observação: aulas presenciais no Bloco B</td>
+                    </tr>
+                    <tr>
+                        <td>Turno 2 - Tarde</td>
+                    </tr>
+                    <tr>
+                        <td>Turno 3 - Noite</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Tabela com colspan e rowspan</h2>
+            <table>
+                <caption>Grade horária de terça-feira</caption>
+                <tbody>
+                    <tr>
+                        <td colspan="2">Manhã</td>
+                        <td>Tarde</td>
+                        <td rowspan="3">Observações: horário sujeito a alteração</td>
+                    </tr>
+                    <tr>
+                        <td>Aula 1</td>
+                        <td>Aula 2</td>
+                        <td>Trabalho</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Intervalo</td>
+                        <td>Trabalho</td>
+                    </tr>
+                    <tr>
+                        <td>Aula 5</td>
+                        <td>Aula 6</td>
+                        <td>Trabalho</td>
+                        <td>Descanso</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><a href="index.html">Voltar ao menu principal</a></p>
+    </footer>
+
+</body>
+</html>
